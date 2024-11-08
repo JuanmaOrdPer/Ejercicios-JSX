@@ -1,26 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-import Saludo from './Saludos'
-import Despedida from './Despedida'
-import Coches from './Coches';
+import "./App.css";
+import Contador from "./Contador.js";
+import FormularioSimple from "./FormularioSimple.js";
+import ListaTareas from "./ListaTareas.js";
+import Toggle from "./Toggle.js";
+import Buscador from "./Buscador.js";
 
 
 function App() {
-  const isLog = true;
-
 
 
   return (
     <div className="App">
-      <header className="App-header">     
-       {isLog ?(
-        <Saludo nombre = "Juanma"></Saludo>
-       ) :(
-        <Despedida nombre = "Juanma"></Despedida>
-       )
-      }
-      <div class="StyledTextComponent"><Coches></Coches></div>
-       </header>
+      <header className="App-header">
+        <>
+          <h5>Contador</h5>
+         <Contador></Contador>
+
+        <h5>FormularioSimple </h5>
+        <FormularioSimple></FormularioSimple>
+
+        <h5>Toggle</h5>
+        <Toggle></Toggle>
+        
+        <h5>Lista Tareas</h5>
+        <ListaTareas></ListaTareas>
+
+        <h5>Buscador</h5>
+          <Buscador></Buscador>
+        </>
+      </header>
     </div>
   );
 }
